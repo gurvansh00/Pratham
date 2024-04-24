@@ -3,6 +3,9 @@ import streamlit as st
 st.title('Experiment')
 pygame.init()
 col1,col2 = st.columns([0.7,0.3])
+with col2:
+  st.slider('Length',1,10)
+
 with col1:
   display=pygame.display.set_mode ((600, 600))
   clock=pygame.time.Clock()
@@ -22,6 +25,4 @@ with col1:
   game()
   pygame.quit()
 
-with col2:
-  st.slider('Length',1,10)
 
