@@ -3,7 +3,7 @@ import streamlit as st
 st.title('Experiment')
 pygame.init()
 col1,col2 = st.columns([0.7,0.3])
-  with col1:
+with col1:
   display=pygame.display.set_mode ((600, 600))
   clock=pygame.time.Clock()
   space = pymunk.Space()
