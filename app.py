@@ -21,7 +21,7 @@ with col1:
       self.shape.density = 1
       self.shape.elasticity = 1
     def draw(self):
-      pygame.draw.circle(display, (255,0,0), convert_coordinates(self.body.position),10
+      pygame.draw.circle(display, (255,0,0), convert_coordinates(self.body.position),10)
 
   
   def game():
