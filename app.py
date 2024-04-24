@@ -17,7 +17,7 @@ with col1:
     def init_(self, x, y):
       self.body = pymunk.Body()
       self.body. position = x, y
-      self.shape = pymunk.Circle(self.body, 10）
+      self.shape = pymunk.Circle(self.body, 10)
       self.shape.density = 1
       self.shape.elasticity = 1
     def draw(self):
