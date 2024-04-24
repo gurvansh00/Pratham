@@ -14,7 +14,7 @@ with col1:
   def convert_coordinates(point):
     return int(point[0]), int(600-point[1])
   class Ball():
-    def init_(self, x, y):
+    def __init__(self, x, y):
       self.body = pymunk.Body()
       self.body. position = x, y
       self.shape = pymunk.Circle(self.body, 10)
